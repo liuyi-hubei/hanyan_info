@@ -1,24 +1,30 @@
-# hanyan_info
+# 韩嫣 Portfolio
 
-静态网页项目，用于展示“上海二手房市场月度数据分析与短期预测”报告。
+平面设计师个人静态网站，用于展示韩嫣的品牌视觉、广告 KV、商业合成、数字营销视觉和跨媒介版式设计作品。
 
 ## 项目结构
 
-- `index.html`: 可直接部署的静态页面，报告图片以内嵌 base64 PNG 的形式放在页面中。
+- `index.html`: 网站首页，纯 HTML/CSS，无构建依赖。
+- `assets/`: 从作品集 PDF 中提取并压缩后的轻量作品图片。
+- `.files/`: 本地原始简历和作品集 PDF，仅用于生成素材，不提交到 GitHub。
 
 ## 本地预览
 
-直接用浏览器打开 `index.html` 即可预览，不需要安装依赖或启动构建工具。
+直接用浏览器打开：
+
+```text
+file:///D:/code_files/hanyan_web_info/index.html
+```
 
 ## 部署
 
-该项目适合直接通过 GitHub Pages 部署：
+适合直接部署到 GitHub Pages：
 
 1. 打开仓库 Settings。
 2. 进入 Pages。
 3. Source 选择 `Deploy from a branch`。
 4. Branch 选择 `main`，目录选择 `/root`。
 
-## 维护说明
+## 维护
 
-更新报告时，替换 `index.html` 中的标题、说明、页脚日期和内嵌图片即可。
+更新作品时，先把 PDF 或图片放入 `.files/`，再生成压缩后的图片放到 `assets/`，并在 `index.html` 中引用压缩图。
